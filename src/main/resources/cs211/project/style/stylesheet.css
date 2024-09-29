@@ -1,0 +1,214 @@
+/*main color #FF8FAB*/
+
+.button {
+    -fx-background-color: #FF8FAB;
+    /*-fx-font-family: "Calibri";*/
+}
+
+.button:pressed {
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.element{
+    -fx-background-color: #FFFFFF;
+}
+.element:hover {
+    -fx-background-color: #FFB3C6;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-box{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+    -fx-border-color: #D7D7D7;
+    -fx-border-radius: 100;
+}
+
+.search-button{
+    -fx-background-color: #FF8FAB;
+    -fx-background-radius: 30;
+}
+
+.navigation-list{
+    -fx-background-color: #FFFFFF;
+}
+
+.navigation-button{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.navigation-button:hover{
+    -fx-background-color: #FFB3C6;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,0.0);
+}
+
+.navigation-button-selected{
+    -fx-background-color: #FFB3C6;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,0.0);
+}
+
+.radius{
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}
+
+
+.textFlow{
+    /*-fx-background-color: linear-gradient(to left, #ff512f, #dd2476);*/
+    /*บน ขวา ล่าง ซ้าย*/
+    -fx-background-color: #FF8FAB;
+    -fx-background-insets: -5 -10 -5 -10;
+    /*-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,0.5,0.5);*/
+    -fx-background-radius: 15;
+
+}
+
+.textFlowFlipped{
+    /*-fx-background-color: linear-gradient(to left, #4776e6, #8e54e9);*/
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: -5 -10 -5 -10;
+    /*-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,-0.5,-0.5);*/
+    -fx-background-radius: 15;
+}
+
+.hBoxMessage{
+    -fx-padding: 12px;
+}
+
+
+.usernameText{
+    -fx-fill: #FF8FAB;
+    -fx-font-size: 12px;
+}
+
+.message{
+    -fx-fill: #212121;
+    -fx-font-size: 16px;
+    -fx-font-weight: 300;
+}
+
+.timeText{
+    -fx-fill: #212121;
+    -fx-font-size: 10px;
+}
+
+.catBox {
+    -fx-background-color: #FF8FAB;
+    -fx-background-radius: 20px;
+    -fx-padding: 5px;
+    -fx-text-fill: #000000;
+    /*margin-top: 20gpx;*/
+}
+
+.category-button-selected {
+    -fx-background-color: lightgrey;
+}
+
+.team-full{
+    -fx-background-color: grey;
+    -fx-background-radius: 30;
+}
+
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+
+.button-with-icon{
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+}
+
+.button-with-icon:hover{
+    -fx-background-color: lightgrey;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    /*-fx-font-family: "Calibri";*/
+}
+
+.column-header {
+    -fx-background-color: #FF8FAB;
+}
+
+.cell-selection {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-background-color: transparent;
+}
+
+.tab{
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    /*-fx-font-family: "Calibri";*/
+}
+
+.tab:selected{
+    -fx-background-color: #FF8FAB;
+}
+
+.tab:hover{
+    -fx-background-color: #FF8FAB;
+}
+
+.tab:disabled{
+    -fx-opacity: 0.5;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+}
+
+.menu-button .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.menu-button .menu-item:hover {
+    -fx-background-color: #FF8FAB;
+}
+
+.label {
+   /*-fx-font-family: "Calibri";*/
+}
+
+.text-field{
+   /*-fx-font-family: "Calibri";*/
+}
+
+.text-area{
+   /*-fx-font-family: "Calibri";*/
+}
+
+.text-flow .text{
+   /*-fx-font-family: "Calibri";*/
+}
+
+.text{
+   /*-fx-font-family: "Calibri";*/
+}
+
+.hyperlink{
+   /*-fx-font-family: "Calibri";*/
+}
+
+.category-open-selected {
+    -fx-background-color: lightgrey;
+}
+
+.part-box{
+    -fx-background-color: #FF8FAB;
+    -fx-background-radius: 20px;
+    -fx-padding: 5px;
+    -fx-text-fill: black;
+}

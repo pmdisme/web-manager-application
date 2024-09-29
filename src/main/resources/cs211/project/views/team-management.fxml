@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.TeamManagementController">
+   <children>
+      <Line endX="-100.0" endY="800.0" layoutX="690.0" startX="-100.0" />
+      <TableView fx:id="activityTableView" layoutX="625.0" layoutY="100.0" prefHeight="450.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="activityStatusColumn" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="activityNameColumn" prefWidth="147.0" text="Name" />
+            <TableColumn fx:id="activityDescriptionColumn" prefWidth="276.0" text="Description" />
+         </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="55.0" text="List of participants">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="55.0" text="Activities">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="endActivityButton" layoutX="1017.0" layoutY="734.0" mnemonicParsing="false" onAction="#handleEndActivityButton" text="End Activity">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="addActivityButton" layoutX="625.0" layoutY="732.0" mnemonicParsing="false" onAction="#handleAddActivityButton" text="Add Activity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="625.0" layoutY="566.0" text="Activity Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="625.0" layoutY="614.0" prefHeight="102.0" prefWidth="111.0" text="Activity Description" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="activityNameTextField" layoutX="762.0" layoutY="562.0" prefHeight="35.0" prefWidth="363.0" promptText="Activity Name" />
+      <Button fx:id="deleteActivityButton" layoutX="815.0" layoutY="732.0" mnemonicParsing="false" onAction="#handleRemoveActivityButton" text="Delete Activity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="activityDescriptionTextArea" layoutX="762.0" layoutY="614.0" prefHeight="102.0" prefWidth="363.0" promptText="Activity Description" wrapText="true" />
+      <ScrollPane fx:id="participantListScrollPane" layoutX="50.0" layoutY="97.0" prefHeight="609.0" prefWidth="500.0" styleClass="transparent">
+         <content>
+            <GridPane fx:id="participantListGridPane" prefHeight="607.0" prefWidth="485.0" styleClass="transparent">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

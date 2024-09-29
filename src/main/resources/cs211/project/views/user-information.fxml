@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.UserInformationController">
+   <children>
+      <Label layoutX="88.0" layoutY="40.0" text="User Information">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="90.0" layoutY="168.0" text="usernameLabel" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="88.0" layoutY="136.0" text="nameLabel">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="227.0" text="Your Upcoming Events">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="227.0" text="Your Past Events">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="344.4518737792969" layoutX="452.0" layoutY="496.0" rotate="90.0" startX="-100.0" strokeWidth="2.0" />
+      <TableView fx:id="activeEventTableView" layoutX="88.0" layoutY="274.0" prefHeight="445.0" prefWidth="450.0" />
+      <TableView fx:id="eventHistoryTableView" layoutX="611.0" layoutY="274.0" prefHeight="445.0" prefWidth="450.0" />
+      <ImageView fx:id="profileImageView" fitHeight="140.0" fitWidth="140.0" layoutX="952.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="changeProfileButton" layoutX="1011.0" layoutY="195.0" mnemonicParsing="false" onAction="#changeProfile" text="Change">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="979.0" layoutY="195.0" mnemonicParsing="false" onAction="#cancelChangeProfilePic" text="X">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="88.0" layoutY="96.0" text="Welcome !">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="953.0" layoutY="228.0" onAction="#resetPassword" text="Reset your password" textFill="#070000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

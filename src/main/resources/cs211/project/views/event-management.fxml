@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EventManagementController">
+   <children>
+      <Label layoutX="158.0" layoutY="85.0" text="Event Management">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="184.0" text="Event name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="216.0" text="Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="311.0" text="Category">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="344.0" text="Upload photo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="379.0" text="Event location">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="421.0" text="Event start date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="470.0" text="Event end date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="513.0" text="Opening of Participants">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="514.0" text="Max participants">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="363.0" layoutY="547.0" text="Application opening day">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="363.0" layoutY="581.0" text="Application closing day">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="867.0" layoutY="692.0" mnemonicParsing="false" onAction="#handleManageTeamButton" text="Team Management">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="527.0" layoutY="692.0" mnemonicParsing="false" onAction="#eventPartiManagementButton" text="Participants And Activity Management">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="maxParticipantTextField" layoutX="567.0" layoutY="514.0" promptText="Max participants" />
+      <DatePicker fx:id="startDatePicker" layoutX="344.0" layoutY="424.0" />
+      <DatePicker fx:id="endDatePicker" layoutX="344.0" layoutY="471.0" />
+      <DatePicker fx:id="startJoinDatePicker" layoutX="566.0" layoutY="547.0" prefHeight="26.0" prefWidth="150.0" promptText="Application opening day" />
+      <DatePicker fx:id="closingJoinDatePicker" layoutX="566.0" layoutY="582.0" prefHeight="20.0" prefWidth="150.0" promptText="Application closing day" />
+      <Button layoutX="33.0" layoutY="30.0" mnemonicParsing="false" onAction="#backToYourCreatedEvents" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="eventNameTextField" editable="true" layoutX="343.0" layoutY="184.0" prefHeight="26.0" prefWidth="199.0" />
+      <TextField fx:id="placeTextField" editable="true" layoutX="344.0" layoutY="379.0" prefHeight="26.0" prefWidth="199.0" />
+      <ChoiceBox fx:id="eventChoiceBox" layoutX="344.0" layoutY="312.0" prefHeight="26.0" prefWidth="199.0" />
+      <Button fx:id="editImageButton" layoutX="344.0" layoutY="345.0" mnemonicParsing="false" onAction="#uploadImage" text="Upload" />
+      <Button fx:id="saveEventEditButton" layoutX="387.0" layoutY="692.0" mnemonicParsing="false" onAction="#saveEventEditButton" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="eventImageView" fitHeight="150.0" fitWidth="200.0" layoutX="794.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="errorLabel" layoutX="385.0" layoutY="636.0" text="errorLabel" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="startTimeEditButton" layoutX="543.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleStartTimeButton" prefHeight="26.0" prefWidth="98.0" text="Start Time" />
+      <Button fx:id="endTimeEditButton" layoutX="543.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleEndTimeButton" prefHeight="26.0" prefWidth="98.0" text="End Time" />
+      <Button fx:id="startJoinTimeButton" layoutX="731.0" layoutY="548.0" mnemonicParsing="false" onAction="#handleStartJoinTimeButton" prefHeight="26.0" prefWidth="98.0" text="opening time" />
+      <Button fx:id="closeJoinTimeButton" layoutX="731.0" layoutY="583.0" mnemonicParsing="false" onAction="#handleCloseJoinTimeButton" prefHeight="26.0" prefWidth="98.0" text="closing time" />
+      <Button fx:id="clearJoinTimesButton" layoutX="730.0" layoutY="620.0" mnemonicParsing="false" onAction="#handleClearJoinTimesButton" text="clear selected time" />
+      <TextArea fx:id="eventInfoTextArea" layoutX="343.0" layoutY="224.0" prefHeight="76.0" prefWidth="299.0" wrapText="true" />
+   </children>
+</AnchorPane>

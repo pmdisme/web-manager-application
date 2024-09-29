@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="523.0" stylesheets="@../style/stylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateTeamController">
+   <children>
+      <VBox prefHeight="327.0" prefWidth="523.0" spacing="40.0">
+         <children>
+            <Pane prefHeight="0.0" prefWidth="619.0" />
+            <HBox prefHeight="35.0" prefWidth="619.0" spacing="10.0">
+               <children>
+                  <Label text="Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="teamNameTextField" prefHeight="35.0" prefWidth="351.0" promptText="Team name" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="619.0" spacing="10.0">
+               <children>
+                  <Label text="Max Participants">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numPeopleTextField" prefHeight="35.0" prefWidth="250.0" promptText="Max Participants" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="619.0" spacing="10.0">
+               <children>
+                  <Label text="Opening schedule">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="startDateDatePicker" editable="false" prefHeight="35.0" prefWidth="153.0" promptText="Opening schedule" />
+                  <MenuButton fx:id="startHourMenuButton" alignment="CENTER" mnemonicParsing="false" popupSide="RIGHT" prefHeight="35.0" prefWidth="46.0" text="00" />
+                  <Label text=":">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="startMinuteMenuButton" alignment="CENTER" mnemonicParsing="false" popupSide="RIGHT" prefHeight="35.0" prefWidth="46.0" text="00" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="619.0" spacing="10.0">
+               <children>
+                  <Label text="Closing schedule  ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="endDateDatePicker" editable="false" prefHeight="35.0" prefWidth="153.0" promptText="Closing schedule" />
+                  <MenuButton fx:id="endHourMenuButton" alignment="CENTER" mnemonicParsing="false" popupSide="RIGHT" prefHeight="35.0" prefWidth="46.0" text="00" />
+                  <Label text=":">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="endMinuteMenuButton" alignment="CENTER" mnemonicParsing="false" popupSide="RIGHT" prefHeight="35.0" prefWidth="46.0" text="00" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

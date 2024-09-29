@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: FFFFFF;" stylesheets="@../style/stylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="800.0" prefHeight="871.0" prefWidth="480.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Label layoutX="49.0" layoutY="345.0" text="Username *" textFill="#5e5e5e">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="444.0" text="Password *" textFill="#5e5e5e">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="49.0" layoutY="376.0" prefHeight="25.0" prefWidth="383.0" promptText="Enter your username" />
+            <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="49.0" layoutY="477.0" prefHeight="25.0" prefWidth="383.0" promptText="Enter your password" />
+            <Button fx:id="loginButton" defaultButton="true" layoutX="214.0" layoutY="533.0" mnemonicParsing="false" onAction="#login" text="LOGIN" />
+            <Hyperlink layoutX="49.0" layoutY="586.0" onAction="#goToRegister" text="Don't have an account?" textFill="#070000" />
+            <Label fx:id="errorLabel" layoutX="49.0" layoutY="516.0" prefHeight="17.0" prefWidth="237.0" textFill="RED" />
+            <Hyperlink layoutX="382.0" layoutY="609.0" onAction="#goToCreators" text="Contact" textFill="#070000" />
+            <Label layoutX="187.0" layoutY="256.0" text="Login">
+               <font>
+                  <Font name="Calibri Bold" size="45.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="299.0" layoutY="586.0" onAction="#goToInstructions" text="Application instructions" textFill="#070000" />
+         </children>
+      </AnchorPane>
+      <Line endX="-100.0" endY="862.0" layoutX="900.0" layoutY="9.0" startX="-100.0" startY="-9.0" />
+      <Pane layoutX="-8.0" layoutY="-7.0" prefHeight="878.0" prefWidth="808.0" style="-fx-background-color: ffebf5;" />
+      <ImageView fitHeight="860.0" fitWidth="799.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loginPageImage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

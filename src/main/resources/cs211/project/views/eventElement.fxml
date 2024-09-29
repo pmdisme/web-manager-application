@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="202.0" prefWidth="256.0" style="-fx-background-radius: 30;" stylesheets="@../style/stylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EventElementController">
+   <VBox alignment="CENTER" prefHeight="249.0" prefWidth="256.0" spacing="5.0">
+      <children>
+            <Label fx:id="eventNameLabel" text="Event name" textAlignment="CENTER">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+            <ImageView fx:id="eventImageView" fitHeight="129.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;">
+      </ImageView>
+         <Label fx:id="participantNumLabel" styleClass="part-box" text="partiNum" />
+         <Label fx:id="categoryLabel" text="Category :">
+            <styleClass>
+               <String fx:value="catBox" />
+               <String fx:value="shadow" />
+            </styleClass>
+         </Label>
+      </children>
+   </VBox>
+   <styleClass>
+      <String fx:value="element" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

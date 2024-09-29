@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: FFFFFF;" stylesheets="@../style/stylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.RegisterController">
+    <children>
+        <Label layoutX="975.0" layoutY="46.0" text="Sign Up">
+            <font>
+                <Font name="Calibri Bold" size="45.0" />
+            </font>
+        </Label>
+        <Label layoutX="854.0" layoutY="380.0" text="Name *" textFill="#656565">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameTextField" alignment="CENTER" layoutX="854.0" layoutY="410.0" prefHeight="25.0" prefWidth="374.0" promptText="Enter your name" />
+        <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="854.0" layoutY="474.0" prefHeight="25.0" prefWidth="374.0" promptText="Enter your username" />
+        <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="856.0" layoutY="543.0" prefHeight="25.0" prefWidth="374.0" promptText="Enter your password" />
+        <PasswordField fx:id="confirmPasswordTextField" alignment="CENTER" layoutX="856.0" layoutY="610.0" prefHeight="25.0" prefWidth="374.0" promptText="Enter your password again" />
+        <Button layoutX="1166.0" layoutY="670.0" mnemonicParsing="false" onAction="#signUp" text="SIGN UP" />
+        <Hyperlink layoutX="854.0" layoutY="671.0" onAction="#goToLogin" text="Already have an account?" textFill="#000001" />
+        <Label layoutX="854.0" layoutY="447.0" text="Username *" textFill="#656565">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="854.0" layoutY="513.0" text="Password *" textFill="#656565">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="854.0" layoutY="582.0" text="Confirm password *" textFill="#656565">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="errorLabel" layoutX="854.0" layoutY="645.0" prefHeight="17.0" prefWidth="271.0" textFill="RED" />
+        <ImageView fx:id="profileImageView" fitHeight="180.0" fitWidth="180.0" layoutX="956.0" layoutY="107.0" pickOnBounds="true" smooth="false" />
+        <Button fx:id="upLoadImageButton" layoutX="996.0" layoutY="307.0" mnemonicParsing="false" onAction="#upLoadImage" text="Upload image" />
+        <Label layoutX="1094.0" layoutY="313.0" style="-fx-opacity: 50%;" text="*optional" />
+        <Button fx:id="cancelUploadButton" disable="true" layoutX="960.0" layoutY="307.0" mnemonicParsing="false" onAction="#cancelUpload" prefHeight="25.0" prefWidth="29.0" text="X" visible="false" />
+        <Line endX="-100.0" endY="846.0" layoutX="900.0" layoutY="9.0" startX="-100.0" startY="-9.0" />
+        <Pane layoutX="-8.0" layoutY="-7.0" prefHeight="878.0" prefWidth="808.0" style="-fx-background-color: ffebf5;" />
+        <ImageView fitHeight="860.0" fitWidth="799.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/loginPageImage.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
